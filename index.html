@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #root{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .flor{
+      display: flex;
+      width: 100vw;
+      height: 50vh;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .flor>div{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color:lightcoral;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+    }
+
+    .dis{
+      width: 100vh;
+      height: 50vh;
+      display: flex;
+      justify-content:center;
+      align-items: flex-end;
+    }
+
+    .btn{
+      width: 200px;
+      height: 100px;
+      font-size: 50px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="flor">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+    <div class="dis">
+      <button class="btn">click</button>
+    </div>
+  </div>
+
+  <script>
+    const florcd = document.querySelector('.flor').children
+   // console.log(florcd)
+    const btn = document.querySelector('.btn')
+   // console.log(btn)
+   //console.log(florcd)
+   let i = 0;
+   btn.addEventListener('click',function(){
+    //console.log('test')
+    
+  })
+
+  </script>
+</body>
+</html>
